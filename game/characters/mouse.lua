@@ -7,10 +7,6 @@ function Mouse:get_tile_position()
   math.randomseed(os.time())
   local x = math.random(0, graphics.getWidth())
   local y = math.random(80, graphics.getHeight())
-<<<<<<< HEAD
-  print(x, y)
-=======
->>>>>>> 8bdd9d28d30ff8cb04e03141efe207fc0fde40ba
   local newX = math.floor(x / 16) * 16
   local newY = math.floor(y / 16) * 16
   return Vector2:new(newX, newY)
