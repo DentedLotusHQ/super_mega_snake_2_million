@@ -4,7 +4,6 @@ local timer = require("game.Timer"):new()
 local gameManager = require("game.GameManager"):new(timer)
 local map = require("map/map"):new("assets/basemap.lua")
 local mouse = require("game.characters.mouse"):new()
-
 function love.load()
 end
 
