@@ -7,8 +7,7 @@ function Input:initialize(input_method)
 end
 
 function Input:getMovement()
-    xy = self.inputDevice:getMovement()
-    return xy
+    return self.inputDevice.getMovement
 end
 
 return Input
