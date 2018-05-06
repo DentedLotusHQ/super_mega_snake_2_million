@@ -9,6 +9,8 @@ end
 
 function love.update(dt)
   map:update(dt)
+  local xy = input:getMovement()
+  gameManager:update(dt)
 end
 
 function love.draw()
