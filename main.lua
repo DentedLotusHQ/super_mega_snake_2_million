@@ -3,6 +3,7 @@ local ui = require("models.ui.UI"):new()
 local timer = require("game.Timer"):new()
 local gameManager = require("game.GameManager"):new(timer)
 local map = require("map/map"):new("assets/basemap.lua")
+local mouse = require("game.characters.mouse"):new()
 
 function love.load()
 end
@@ -16,4 +17,5 @@ function love.draw()
   ui:draw()
   map:update(dt)
   map:draw()
+  mouse:draw()
 end
